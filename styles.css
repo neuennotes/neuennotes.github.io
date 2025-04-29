@@ -30,7 +30,7 @@ body {
 /* Navbar */
 /* Ensure navbar items are white on dark background */
 .navbar-dark{
-    height: 70px
+    min-height: 70px
 }
 .navbar-dark .navbar-nav .nav-link {
     color: white;
@@ -50,6 +50,13 @@ body {
     color: var(--accent-color); /* Highlight color for brand */
 }
 
+.navbar-collapse {
+  background-color: #212529; /* Same as your navbar bg-dark color */
+  padding: 1rem 0;
+  border-radius: 0 0 8px 8px;
+  
+
+}
 
 
 /* Ensure sections span the entire width */

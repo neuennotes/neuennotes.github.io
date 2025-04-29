@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
         {
             service: "Standard Tuning",
             price: "$150",
-            description: "3 hr session.<br>Includes: tuning, light cleaning, inspection for any potential repair."
+            description: "3 hr session.<br>Includes: Piano Tuning to standard pitch, Light Cleaning, and Inspection for any potential repairs."
         },
+        // {
+        //     service: "Standard Tuning + Pitch Raise",
+        //     price: "$200",
+        //     description: "3 hr session.<br>Includes everything in the Standard Tuning plus pitch correction for pianos that have not been tuned for many years.<br>(Pitch correction could also be recommended on location after inspection.)"
+        // },
         {
-            service: "Standard Tuning + Pitch Raise",
-            price: "$200",
-            description: "3 hr session.<br>Includes everything in the Standard Tuning plus pitch correction for pianos that have not been tuned for many years.<br>(Pitch correction could also be recommended on location after inspection.)"
-        },
-        {
-            service: "Individual Repairs",
-            price: "Varies",
-            description: "Reach out at <a href='mailto:neuennotes@gmail.com' style='color: var(--accent-color);'>neuennotes@gmail.com</a> to inquire about pricing and schedules."
+            service: "Piano Diagnostic (Repair/Purchasing)",
+            price: "$50",
+            description: "The technician will assess the needs of the piano and provide recommendations for repairs."
         }
     ];
 
