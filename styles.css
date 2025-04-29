@@ -1,0 +1,309 @@
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: #a45e37; /* Warm accent */
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: clamp(1rem, 1.1vw, 1.15rem);
+}
+
+.container {
+    max-width: 85%;
+    padding: 0 5%;
+    font-size: 1.1rem;
+
+  }
+
+
+
+/* Navbar */
+/* Ensure navbar items are white on dark background */
+.navbar-dark{
+    height: 70px
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Make "Book Now" button visible on dark navbar */
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: var(--accent-color); /* Highlight color on hover */
+}
+
+.navbar-dark .navbar-brand {
+    color: white;
+}
+
+.navbar-dark .navbar-brand:hover {
+    color: var(--accent-color); /* Highlight color for brand */
+}
+
+
+
+/* Ensure sections span the entire width */
+section {
+    width: 100vw;
+    padding: 80px 0;
+}
+
+/* Alternating background colors */
+section:nth-child(odd) {
+    background-color: var(--secondary-color); /* White */
+    color: var(--text-color);
+}
+
+section:nth-child(even) {
+    background-color: var(--light-gray); /* Light gray */
+    color: var(--text-color);
+}
+
+/* Hero Section */
+.hero {
+    background-color: black;
+    background: url('material/header4.jpg') bottom center/cover no-repeat;
+                /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); Background image with alpha */
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 150px 20px;
+}
+
+#hero {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    text-align: center;
+    position: relative; /* Allow absolute positioning of content */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh; /* Match the height of the hero section */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black (Optional, can remove if you want) */
+    z-index: 1; /* Ensure it stays above the background image but below the content */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px black;
+    z-index: 2; /* Ensure the title stays above the overlay */
+}
+
+/* Box around the hero content */
+.hero-content-box {
+    position: relative; /* Content stays above the overlay */
+
+    /* background-color: rgba(0, 0, 0,0.5);  */
+    padding: 40px; /* Add padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Ensure the box wraps tightly around the content */
+    color: white; /* Ensure text and button are white on dark background */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Add subtle shadow for depth */
+    z-index: 10;
+}
+
+.hero-content-box h1 {
+    margin-bottom: 20px; /* Space between heading and button */
+}
+
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+ .btn {
+    background-color: var(--accent-color);
+    color: white!important;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+ .btn:hover {
+    background-color: #b37940;
+}
+.btn:active {
+  background-color: #b37940!important;
+}
+
+/* Scroll Arrow */
+.scroll-arrow {
+    position: absolute;
+    bottom: 50px; /* Distance from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    cursor: pointer;
+    font-size: 2rem;
+    animation: bounce 1.5s infinite;
+}
+
+/* CSS for the Arrow */
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: rotate(-45deg);
+    margin-top: 10px;
+}
+
+/* Arrow Bounce Animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* Pricing Layout */
+.pricing-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .pricing-menu {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .pricing-details {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  /* Service List */
+  #service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #service-list li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  #service-list li:hover {
+    background-color: var(--light-gray);
+    transform: translateX(5px);
+  }
+  
+  #service-list .price {
+    color: var(--primary-color)!important;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+  /* Description box */
+  #service-description {
+    background-color: var(--light-gray);
+    padding: 25px;
+    border-radius: 8px;
+    min-height: 180px;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pricing-layout {
+      flex-direction: column;
+    }
+  }
+  
+
+
+  #about {
+    padding: 60px 20px;
+  }
+  
+  .about-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .about-images {
+    flex: 0.8;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-img {
+    width: 100%;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    /* object-fit: cover; */
+  }
+  
+  .about-text {
+    flex: 2.2;
+    min-width: 280px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  #about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+
+  
+/* Contact Section */
+.contact {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
