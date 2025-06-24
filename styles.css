@@ -121,7 +121,7 @@ section:nth-child(even) {
 
 @media (max-width: 768px) {
   .hero-logo {
-    width: 50%;        
+    width: 70%;        
   }
 }
 .hero h1 {
