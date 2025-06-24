@@ -121,7 +121,7 @@ section:nth-child(even) {
 
 @media (max-width: 768px) {
   .hero-logo {
-    width: 60vw;         /* Use a percentage of the viewport on smaller screens */
+    width: 50%;        
   }
 }
 .hero h1 {
