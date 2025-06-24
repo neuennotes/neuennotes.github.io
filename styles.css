@@ -117,11 +117,12 @@ section:nth-child(even) {
   height: auto;         /* Keeps aspect ratio */
   display: block;
   margin: 0 auto;
+  padding-bottom:2rem;
 }
 
 @media (max-width: 768px) {
   .hero-logo {
-    width: 70%;        
+    width: 70%;      
   }
 }
 .hero h1 {
