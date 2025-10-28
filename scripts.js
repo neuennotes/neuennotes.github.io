@@ -5,13 +5,19 @@ document.addEventListener("DOMContentLoaded", function () {
         service: "Standard Tuning",
         price: "$150",
         description:
-          "3 hr session.<br>Includes: Piano Tuning to standard pitch, Light Cleaning, and Inspection for any potential repairs.",
+          "3 hr session.<br>Piano Tuning to standard pitch, Light Cleaning and Inspection for any potential repairs. <br>This option is for instruments that have been tuned within the last year.",
+      },
+      {
+        service: "Pitch Raise",
+        price: "$250",
+        description:
+          "4 hr session.<br>The piano technician requires extra time and work to perform a rough tuning allowing the instrument to settle, then go back and fine tune each string. <br>This is for instruments that have not been tuned or serviced in a long time. ",
       },
       {
         service: "Piano Diagnostic (Repair/Purchasing)",
         price: "$50",
         description:
-          "The technician will assess the needs of the piano and provide recommendations for repairs.",
+          "1 hr session. <br>Technician will assess the needs of the piano and provide recommendations for repairs and quotes for future service.",
       },
     ];
   
@@ -54,6 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // ----- Reviews Section -----
     const reviewsData = [
       {
+        name: "Lee F.",
+        review:
+          "Very thorough and excellent tunings. Weeks later and my Steinway baby grand sounds great! Reasonable too!!",
+        rating: 5,
+      },{
         name: "Julia M.",
         review:
           "I’ve had the pleasure of knowing Eric for a long time. We have shared many musical notes together on stage. He is a fantastic pianist and his passion for music is very strong. Which is why he is such a talented piano technician. He came to my house and spent time getting to know my piano and really paid special attention to the details of getting not only a gorgeous sound, but also to feel and play like it was brand new! I have had this piano for several years and it has been moved a few times. I have always found it to be a little stiff for a Yamaha. However after Eric’s magical touch, she plays effortlessly. I highly recommend Eric to tune or service your piano. He takes extra special care, and it shows.",
