@@ -19,6 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
         description:
           "1 hr session. <br>Technician will assess the needs of the piano and provide recommendations for repairs and quotes for future service.",
       },
+      {
+        service: "Deep Cleaning",
+        price: "$50",
+        description:
+          "1 hr session. <br>Technician will perform a deep clean underneath the bed and throughout the instrument.",
+      },
     ];
   
     const list = document.getElementById("service-list");
